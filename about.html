@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Concert+One&family=New+Amsterdam&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -17,43 +17,40 @@
             fontFamily: {
               new_amsterdam: ["New Amsterdam", "sans-serif"],
               bungee_tint: ["Bungee Tint", "sans-serif"],
+              c_one: ["Concert One", "sans-serif"],
             },
           },
         },
       }
     </script>
 </head>
-<body class="font-new_amsterdam text-[x-large]">
-    <header class="flex justify-between items-center py-5 px-10 bg-gray-100">
+<body class="font-new_amsterdam text-[x-large] dark:bg-slate-700 dark:text-white">
+    <header class="flex justify-between items-center py-5 px-10 bg-gray-100 dark:bg-slate-800">
         <h1 class="font-bungee_tint text-4xl">ILYAS</h1>
         <nav class="space-x-5 hidden sm:block">
-            <a class="border-b-4 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400 hover:border-none active:bg-sky-400 active:border-none" href="index.html">Home</a>
-            <a class="border-b-4 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400 hover:border-none active:bg-sky-400 active:border-none" href="about.html">About</a>
-            <a class="border-b-4 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400 hover:border-none active:bg-sky-400 active:border-none" href="showcase.html">Showcase</a>
+            <a class="border-b-4 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400 hover:border-none active:bg-sky-400 active:border-none dark:text-white" href="index.html">Home</a>
+            <a class="border-b-4 p-2 border-sky-400 hover:text-white hover:bg-emerald-400 hover:border-none active:bg-sky-400 active:border-none dark:text-white" href="about.html">About</a>
+            <a class="border-b-4 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400 hover:border-none active:bg-sky-400 active:border-none dark:text-white" href="showcase.html">Showcase</a>
         </nav>
-        <button class="border-4 p-2 border-emerald-400 text-emerald-400 font-bold bg-white hover:border-white hover:text-white hover:bg-sky-400">    
+        <button class="border-4 p-2 border-emerald-400 text-emerald-400 font-bold bg-white hover:border-white hover:text-white hover:bg-sky-400 dark:bg-slate-800 dark:hover:bg-slate-800 dark:hover:text-sky-400 dark:hover:border-sky-400">    
             <a href="contact.html">Contact</a>
         </button>
     </header>
-    <main>
-        <hr>
-        <div>
-            <p>W..We...Welcome. Either you found me or you click that thing up there to be here, I don't know. But this page is...</p>
-            <h1>About ME</h1>
+    <main class="p-2">
+        <div class="py-4">
+            <p>W..We...Welcome. Either you found me or you click that thing up there or down there to be here, I don't know. But this page is...</p>
+            <h1 class="font-bungee_tint text-2xl py-4">About ME</h1>
             <p>Yesss, you're right. You  definately know what this page is. So let me tell you more</p>
         </div>
-        <div>
-            <h2>Experience</h2>
-            <p>Intern at PT. Malino Nirwana Trans</p>
-            <ul>
-                <li>Pengawas Bongkaran</li>
-                <li>Web Maker</li>
+        <div class="pb-4">
+            <h2 class="font-bold underline">Experience</h2>
+            <ul class="list-disc list-outside px-6">
+                <li>Intern at PT. Malino Nirwana Trans</li>
             </ul>
-            <p>*does that count? don't know either</p>
         </div>
-        <div>
-            <h2>Education</h2>
-            <ul>
+        <div class="pb-4">
+            <h2 class="font-bold underline">Education</h2>
+            <ul class="list-disc list-outside px-6">
                 <li>TK Tajdidul Iman (2008 - 2009)</li>
                 <li>SDN Mangkura 3 Makassar (2009 - 2015)</li>
                 <li>SMP Negeri 2 Makassar (2015 - 2018)</li>
@@ -61,13 +58,17 @@
                 <li>Universitas Negeri Makassar (2021 - now) </li>
             </ul>
         </div>
-        <div>
-            <h2>Skills</h2>
-            <p>don't know much yet, sorry</p>
+        <div class="pb-4">
+            <h2 class="font-bold underline">Skills</h2>
+            <ul class="list-disc list-outside px-6">
+                <li>HTML 5</li>
+                <li>CSS</li>
+                <li>Tailwind</li>
+            </ul>
         </div>
         <div>
-            <h2>Interest</h2>
-            <ul>
+            <h2 class="font-bold underline">Interest</h2>
+            <ul class="list-disc list-outside px-6">
                 <li>Gaming</li>
                 <li>Sport</li>
                 <li>Technology</li>
@@ -75,15 +76,14 @@
                 <li>Cars</li>
             </ul>
         </div>
-        <hr>
     </main>
-    <footer class="flex flex-col sm:flex-row sm:justify-between p-5 bg-gradient-to-r from-emerald-400 to-sky-400">
+    <footer class="flex flex-col sm:flex-row sm:justify-between p-5 bg-gradient-to-r from-emerald-400 to-sky-400 dark:from-slate-800 dark:to-slate-800">
         <p>Copyright &copy; 2024 Ilyas Febrian</p>
         <div class="flex px-1">
             <p class=""><i class="fa-brands fa-github"></i> Github</p>
         </div>
     </footer>
-    <nav class="sticky grid grid-cols-3 justify-evenly bg-gray-100/25 bottom-0 left-0 right-0 sm:hidden">
+    <nav class="sticky grid grid-cols-3 justify-evenly bg-gray-500/25 bottom-0 left-0 right-0 sm:hidden">
         <a href="index.html" class="flex flex-col justify-center items-center"><i class="fa-solid fa-house pt-2"></i> Home</a>
         <a href="about.html" class="flex flex-col justify-center items-center"><i class="fa-solid fa-circle-info pt-2"></i></i> About</a>
         <a href="showcase.html" class="flex flex-col justify-center items-center"><i class="fa-solid fa-layer-group pt-2"></i> Showcase</a>

@@ -23,15 +23,15 @@
       }
     </script>
 </head>
-<body class="font-new_amsterdam text-[x-large]">
-    <header class="hidden md:flex justify-between items-center py-5 px-10 bg-gray-100 ">
+<body class="font-new_amsterdam text-[x-large] dark:bg-slate-700 dark:text-white">
+    <header class="hidden md:flex justify-between items-center py-5 px-10 bg-gray-100 dark:bg-slate-800">
         <h1 class="font-bungee_tint text-4xl">ILYAS</h1>
         <nav class="space-x-5">
-            <a class="border-b-4 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400 hover:border-none active:bg-sky-400 active:border-none" href="index.html">Home</a>
-            <a class="border-b-4 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400 hover:border-none active:bg-sky-400 active:border-none" href="about.html">About</a>
-            <a class="border-b-4 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400 hover:border-none active:bg-sky-400 active:border-none" href="showcase.html">Showcase</a>
+            <a class="border-b-4 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400 hover:border-none active:bg-sky-400 active:border-none dark:text-white" href="index.html">Home</a>
+            <a class="border-b-4 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400 hover:border-none active:bg-sky-400 active:border-none dark:text-white" href="about.html">About</a>
+            <a class="border-b-4 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400 hover:border-none active:bg-sky-400 active:border-none dark:text-white" href="showcase.html">Showcase</a>
         </nav>
-        <button class="border-4 p-2 border-emerald-400 text-emerald-400 font-bold bg-white hover:border-white hover:text-white hover:bg-sky-400">    
+        <button class="border-4 p-2 border-emerald-400 text-emerald-400 font-bold bg-white hover:border-white hover:text-white hover:bg-sky-400 dark:bg-slate-800 dark:hover:bg-slate-800 dark:hover:text-sky-400 dark:hover:border-sky-400">    
             <a href="contact.html">Contact</a>
         </button>
     </header>
@@ -46,10 +46,11 @@
                 <div class="flex flex-col m-3 border-2 border-emerald-400 lg:h-auto">
                     <h2 class="my-4 m-1 underline">Contact Form</h2>
                     <form class="grid sm:grid-cols-2 p-2 gap-4">
-                        <input class="border-2 rounded-md h-10 placeholder:text-emerald-400/50 placeholder:px-1" type="text" placeholder="First Name">
-                        <input class="border-2 rounded-md h-10 placeholder:text-emerald-400/50 placeholder:px-1" type="text" placeholder="Last Name">
-                        <input class="border-2 sm:col-span-2 rounded-md h-10 placeholder:text-emerald-400/50 placeholder:px-1" type="email" placeholder="Your Email Goes Here">
-                        <textarea class="border-2 sm:col-span-2 h-32 rounded-md placeholder:text-emerald-400/50 placeholder:px-1" placeholder="Write whatever you like here"></textarea>
+                        <input class="border-2 rounded-md h-10 placeholder:text-emerald-400/50 placeholder:px-1 dark:bg-slate-500" type="text" placeholder="First Name">
+                        <input class="border-2 rounded-md h-10 placeholder:text-emerald-400/50 placeholder:px-1 dark:bg-slate-500" type="text" placeholder="Last Name">
+                        <input class="border-2 sm:col-span-2 rounded-md h-10 placeholder:text-emerald-400/50 placeholder:px-1 dark:bg-slate-500" type="email" placeholder="Your Email Goes Here">
+                        <input class="border-2 sm:col-span-2 rounded-md h-10 placeholder:text-emerald-400/50 placeholder:px-1 dark:bg-slate-500" type="number" placeholder="Your Phone Number">
+                        <textarea class="border-2 sm:col-span-2 h-32 rounded-md placeholder:text-emerald-400/50 placeholder:px-1 dark:bg-slate-500" placeholder="Write whatever you like here"></textarea>
                     </form>
                     <button class="m-2 p-3 rounded-lg bg-emerald-400 text-white justify-self-center active:bg-sky-400">Send Message</button>
                 </div>
@@ -63,7 +64,7 @@
             </div>
         </div>
     </main>
-    <footer class="flex flex-col sm:flex-row sm:justify-between p-5 bg-gradient-to-r from-emerald-400 to-sky-400">
+    <footer class="flex flex-col sm:flex-row sm:justify-between p-5 bg-gradient-to-r from-emerald-400 to-sky-400 dark:from-slate-800 dark:to-slate-800">
         <p>Copyright &copy; 2024 Ilyas Febrian</p>
         <div class="flex px-1">
           <p class=""><i class="fa-brands fa-github"></i> Github</p>
