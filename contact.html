@@ -5,51 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              new_amsterdam: ["New Amsterdam", "sans-serif"],
+              bungee_tint: ["Bungee Tint", "sans-serif"],
+            },
+          },
+        },
+      }
+    </script>
 </head>
-<body>
+<body class="font-new_amsterdam text-[x-large]">
     <header class="hidden md:flex justify-between items-center py-5 px-10 bg-gray-100 ">
-        <h1 class="font-bold italic underline text-2xl">ILYAS</h1>
+        <h1 class="font-bungee_tint text-4xl">ILYAS</h1>
         <nav class="space-x-5">
-            <a class="border-y-2 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400" href="index.html">Home</a>
-            <a class="border-x-2 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400" href="about.html">About</a>
-            <a class="border-y-2 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400" href="showcase.html">Showcase</a>
+            <a class="border-b-4 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400 hover:border-none active:bg-sky-400 active:border-none" href="index.html">Home</a>
+            <a class="border-b-4 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400 hover:border-none active:bg-sky-400 active:border-none" href="about.html">About</a>
+            <a class="border-b-4 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400 hover:border-none active:bg-sky-400 active:border-none" href="showcase.html">Showcase</a>
         </nav>
-        <button class="border-4 p-2 border-white text-white font-bold bg-emerald-400">    
+        <button class="border-4 p-2 border-emerald-400 text-emerald-400 font-bold bg-white hover:border-white hover:text-white hover:bg-sky-400">    
             <a href="contact.html">Contact</a>
         </button>
     </header>
     <main class="lg:m-5">
         <div class="flex flex-col m-4 gap-2">
-            <h1 class="text-3xl font-bold text-emerald-400">Contact</h1>
-            <p>I smell something. Ooohh! You want to contact me huh? You sneaky little ****. But relax, I got u</p>
+            <a onclick="history.back()" class="mb-4 sm:hidden hover:text-emerald-400 active:text-sky-400"><i class="fa-solid fa-rotate-left"></i> back</a>
+            <h1 class="text-4xl font-bold text-emerald-400">Contact</h1>
+            <p>I smell something. Ooohh! You want to contact me huh? You sneaky little ****. But relax, I got u. Here, fill this forms up!</p>
         </div>
         <div class="lg:grid lg:grid-cols-5 justify-center items-center">
             <div class="lg:col-span-3">
                 <div class="flex flex-col m-3 border-2 border-emerald-400 lg:h-auto">
-                    <h2 class="text-xl my-4 m-1 underline">Contact Form</h2>
+                    <h2 class="my-4 m-1 underline">Contact Form</h2>
                     <form class="grid sm:grid-cols-2 p-2 gap-4">
-                        <input class="border-2 rounded-md h-10 placeholder:text-emerald-400" type="text" placeholder="First Name">
-                        <input class="border-2 rounded-md h-10 placeholder:text-emerald-400" type="text" placeholder="Last Name">
-                        <input class="border-2 sm:col-span-2 rounded-md h-10 placeholder:text-emerald-400" type="email" placeholder="Your Email Goes Here">
-                        <textarea class="border-2 sm:col-span-2 h-32 rounded-md placeholder:text-emerald-400" placeholder="Write whatever you like here"></textarea>
+                        <input class="border-2 rounded-md h-10 placeholder:text-emerald-400/50 placeholder:px-1" type="text" placeholder="First Name">
+                        <input class="border-2 rounded-md h-10 placeholder:text-emerald-400/50 placeholder:px-1" type="text" placeholder="Last Name">
+                        <input class="border-2 sm:col-span-2 rounded-md h-10 placeholder:text-emerald-400/50 placeholder:px-1" type="email" placeholder="Your Email Goes Here">
+                        <textarea class="border-2 sm:col-span-2 h-32 rounded-md placeholder:text-emerald-400/50 placeholder:px-1" placeholder="Write whatever you like here"></textarea>
                     </form>
-                    <button class="m-2 p-3 rounded-lg bg-emerald-400 text-white justify-self-center">Send Message</button>
+                    <button class="m-2 p-3 rounded-lg bg-emerald-400 text-white justify-self-center active:bg-sky-400">Send Message</button>
                 </div>
             </div>
             <div class="flex flex-col items-center m-3 gap-3 col-span-2">
-                <h2 class="text-xl my-4 m-1 underline">Social Media</h2>
+                <h2 class="underline">Social Media</h2>
                 <img class="rounded-full size-9/12 sm:size-2/5 lg:size-3/5" src="image/profil_kotak.jpeg" alt="my picture">
-                <p class="font-bold">Ilyas Febrian</p>
-                <a class="text-green-500" href="https://wa.link/95yn0e">WhatsApp</a>
-                <a class="text-fuchsia-500" href="https://www.instagram.com/iyass_f/">Instagram</a>
+                <p class="font-bungee_tint">Ilyas Febrian</p>
+                <a class="text-green-500" href="https://wa.link/95yn0e" target="_blank">WhatsApp</a>
+                <a class="text-fuchsia-500" href="https://www.instagram.com/iyass_f/" target="_blank">Instagram</a>
             </div>
         </div>
     </main>
-    <footer class="flex flex-col sm:flex-row sm:justify-between p-5 bg-emerald-400">
+    <footer class="flex flex-col sm:flex-row sm:justify-between p-5 bg-gradient-to-r from-emerald-400 to-sky-400">
         <p>Copyright &copy; 2024 Ilyas Febrian</p>
-        <div class="flex px-1 gap-2">
-          <img src="" alt="icon">
-          <p class="">Github</p>
+        <div class="flex px-1">
+          <p class=""><i class="fa-brands fa-github"></i> Github</p>
         </div>
     </footer>
 </body>

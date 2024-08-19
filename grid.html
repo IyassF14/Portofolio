@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Lesson</title>
+    <title>Contact</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: skyblue;
-            border: 1px solid black;
-            border-radius: 15px;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              new_amsterdam: ["New Amsterdam", "sans-serif"],
+              bungee_tint: ["Bungee Tint", "sans-serif"],
+            },
+          },
+        },
+      }
+    </script>
 </head>
 <body>
     <div class="grid grid-cols-1 gap-4 min-h-screen p-14">

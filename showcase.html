@@ -5,24 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Showcase</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .grid img{
-            object-fit: cover;
-            height: 100%;
-            width: auto;
-            border:  10px solid white;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              new_amsterdam: ["New Amsterdam", "sans-serif"],
+              bungee_tint: ["Bungee Tint", "sans-serif"],
+            },
+          },
+        },
+      }
+    </script>
 </head>
-<body>
+<body class="font-new_amsterdam text-[x-large]">
     <header class="flex justify-between items-center py-5 px-10 bg-gray-100">
-        <h1 class="font-bold italic underline text-2xl">ILYAS</h1>
+        <h1 class="font-bungee_tint text-4xl">ILYAS</h1>
         <nav class="space-x-5 hidden sm:block">
-            <a class="border-x-2 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400" href="index.html">Home</a>
-            <a class="border-y-2 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400" href="about.html">About</a>
-            <a class="border-2 p-2 rounded-lg border-emerald-400 hover:text-white hover:bg-emerald-400" href="showcase.html">Showcase</a>
+            <a class="border-b-4 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400 hover:border-none active:bg-sky-400 active:border-none" href="index.html">Home</a>
+            <a class="border-b-4 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400 hover:border-none active:bg-sky-400 active:border-none" href="about.html">About</a>
+            <a class="border-b-4 p-2 border-emerald-400 hover:text-white hover:bg-emerald-400 hover:border-none active:bg-sky-400 active:border-none" href="showcase.html">Showcase</a>
         </nav>
-        <button class="border-4 p-2 border-emerald-400 text-emerald-400 font-bold bg-white hover:border-white hover:text-white hover:bg-red-600">
+        <button class="border-4 p-2 border-emerald-400 text-emerald-400 font-bold bg-white hover:border-white hover:text-white hover:bg-sky-400">    
             <a href="contact.html">Contact</a>
         </button>
     </header>
@@ -39,12 +48,16 @@
             <img src="iloveimg-converted_2/Tomura_Shigaraki_Anime_Portrait.jpg" alt="">
         </div>
     </main>
-    <footer class="flex justify-between p-5 bg-emerald-400">
+    <footer class="flex flex-col sm:flex-row sm:justify-between p-5 bg-gradient-to-r from-emerald-400 to-sky-400">
         <p>Copyright &copy; 2024 Ilyas Febrian</p>
         <div class="flex px-1">
-          <img src="" alt="Sementara gaada">
-          <p class="">Github</p>
+          <p class=""><i class="fa-brands fa-github"></i> Github</p>
         </div>
     </footer>
+    <nav class="sticky grid grid-cols-3 justify-evenly bg-gray-100/25 bottom-0 left-0 right-0 sm:hidden">
+        <a href="index.html" class="flex flex-col justify-center items-center"><i class="fa-solid fa-house pt-2"></i> Home</a>
+        <a href="about.html" class="flex flex-col justify-center items-center"><i class="fa-solid fa-circle-info pt-2"></i></i> About</a>
+        <a href="showcase.html" class="flex flex-col justify-center items-center"><i class="fa-solid fa-layer-group pt-2"></i> Showcase</a>
+    </nav>
 </body>
 </html>
